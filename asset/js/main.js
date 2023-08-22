@@ -29,20 +29,28 @@ const userSurname = prompt('inserisci il tuo cognome');
 
 const userColor = prompt('inserisci il tuo colore preferito');
 
-// Chiedere l'anno corrente all'utente
+// Chiedere l'età dell'utente
 
-const userDate = prompt('inserisci la data');
+const userAge = prompt('inserisci la tua età');
 
 // Selezionare il tag tramite id in cui inserire il risultato
 
 const greetingsElement = document.getElementById('greetings');
 console.log(greetingsElement);
 
+// Recuperare l'anno corrente con una const
+
+const currentYear = 2023;
+
+// Sottrarre all'anno corrente gli anni dell'utente
+
+const birthYear = currentYear - Number(userAge);
+
 // Stampare il risultato in console
 
-console.log('Ciao' + userName + userSurname + userColor + userDate);
+console.log('Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge);
 
 // Stampare il risultato in pagina
 // Formattare il risultato nel seguente modo: nomecognomecolorepreferito23
 
-greetingsElement.innerHTML = 'Ciao' + userName + userSurname + userColor + userDate;
+greetingsElement.innerHTML = 'Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge;
