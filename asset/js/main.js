@@ -38,6 +38,9 @@ const userAge = prompt('inserisci la tua età');
 const greetingsElement = document.getElementById('greetings');
 console.log(greetingsElement);
 
+const passwordElement = document.getElementById('password');
+console.log(passwordElement);
+
 // Recuperare l'anno corrente con una const
 
 const currentYear = 2023;
@@ -50,7 +53,11 @@ const birthYear = currentYear - Number(userAge);
 
 console.log('Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge + 'anni');
 
+console.log('La tua password è' + birthYear);
+
 // Stampare il risultato in pagina
 // Formattare il risultato nel seguente modo: nomecognomecolorepreferito23
 
 greetingsElement.innerHTML = 'Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge + 'anni';
+
+passwordElement.innerHTML = 'La tua password è' + birthYear;
