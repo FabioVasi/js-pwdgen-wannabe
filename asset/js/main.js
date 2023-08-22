@@ -48,9 +48,9 @@ const birthYear = currentYear - Number(userAge);
 
 // Stampare il risultato in console
 
-console.log('Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge);
+console.log('Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge + 'anni');
 
 // Stampare il risultato in pagina
 // Formattare il risultato nel seguente modo: nomecognomecolorepreferito23
 
-greetingsElement.innerHTML = 'Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge;
+greetingsElement.innerHTML = 'Ciao' + userName + userSurname + 'sei nato il' + birthYear + 'preferisci il colore' + userColor + 'ed hai' + userAge + 'anni';
