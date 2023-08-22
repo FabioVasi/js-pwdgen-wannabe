@@ -11,6 +11,7 @@ Strumenti.
 - let userName
 - let userSurname
 - let userColor
+- let userDate
 - console.log
 - document.getElementById
 
@@ -28,6 +29,10 @@ const userSurname = prompt('inserisci il tuo cognome');
 
 const userColor = prompt('inserisci il tuo colore preferito');
 
+// Chiedere l'anno corrente all'utente
+
+const userDate = prompt('inserisci la data');
+
 // Selezionare il tag tramite id in cui inserire il risultato
 
 const greetingsElement = document.getElementById('greetings');
@@ -35,10 +40,9 @@ console.log(greetingsElement);
 
 // Stampare il risultato in console
 
-console.log('Ciao' + userName + userSurname + userColor);
+console.log('Ciao' + userName + userSurname + userColor + userDate);
 
 // Stampare il risultato in pagina
-
-greetingsElement.innerHTML = 'Ciao ' + userName + userSurname + userColor;
-
 // Formattare il risultato nel seguente modo: nomecognomecolorepreferito23
+
+greetingsElement.innerHTML = 'Ciao' + userName + userSurname + userColor + userDate;
